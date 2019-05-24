@@ -8,6 +8,5 @@ import { InfoPaginaService } from './servises/info-pagina.service';
 })
 export class AppComponent {
   constructor(public infoPaginaService: InfoPaginaService) {
-
   }
 }
