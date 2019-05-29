@@ -17,7 +17,7 @@ export class InfoPaginaService {
     this.cargarInfo();
     this.cargarEquipo();
   }
-// Se hace una peticion de un opjeto JSON local
+  // Se hace una peticion de un opjeto JSON local
   private cargarInfo() {
     console.log('servicios listo para usar');
     this.http.get('assets/datos/datos-paginas.json')
@@ -28,8 +28,8 @@ export class InfoPaginaService {
       });
   }
 
-//  Se hace una peticion a base de datotos en linea
-//  a una base de datos firebase
+  //  Se hace una peticion a base de datotos en linea
+  //  a una base de datos firebase
   private cargarEquipo() {
     this.http.get('https://fba-proyet.firebaseio.com/equipo.json')
       .subscribe((resp: any[]) => {
