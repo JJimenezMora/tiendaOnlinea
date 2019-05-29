@@ -1,0 +1,61 @@
+<div class="ae-grid">
+
+  <div class="ae-grid__item item-lg-6">
+
+  </div>
+  <div class="ae-grid__item item-lg-6">
+    <form>
+      <div class="ea-form--full">
+
+        <div class="input-group" >
+         
+          <input 
+            type="text" 
+            placeholder="Nombre"
+            name="name"
+            id="name"
+            [(ngModel)]="model.name"
+            required
+          >
+        </div>
+
+        <div>
+          <input 
+          type="text" 
+          placeholder="Apellido"
+          name="lastname"
+          id="lastname"
+          [(ngModel)]="model.lastname"
+          required
+            >
+        </div>
+        <div>
+          <input 
+          type="text" 
+          placeholder="Cédula"
+          name="id"
+          id="id"
+          [(ngModel)]="model.id"
+          required
+          >
+        </div>
+        <div>
+          <input 
+          type="text" 
+          placeholder="Teléfono"
+          name="phone"
+          id="phone"
+          [(ngModel)]="model.phone"
+          required
+          >
+        </div>
+
+      </div>
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+  <div class="pre">
+    <h2>Modelo:</h2>
+    {{currentFormulario}}
+  </div>
+</div>

@@ -5,6 +5,7 @@ import { AboutComponent } from './pagina/about/about.component';
 import { PortafolioComponent } from './pagina/portafolio/portafolio.component';
 import { ItemComponent } from './pagina/item/item.component';
 import { AdjuntoComponent } from './adjunto/adjunto.component';
+import { FormularioComponent } from './formulario/formulario.component';
 
 
 const routes: Routes = [
@@ -12,12 +13,14 @@ const routes: Routes = [
   { path: 'about', component: AboutComponent },
   { path: 'item', component: ItemComponent },
   { path: 'adjunto', component: AdjuntoComponent },
+  { path: 'formulario', component: FormularioComponent},
   { path: '**', pathMatch: 'full', redirectTo: 'home' },
+
 ];
 
 
 @NgModule({
-  declarations: [AdjuntoComponent],
+  declarations: [],
   imports: [
   RouterModule.forRoot(routes, {useHash: true})
   ],
